@@ -1,0 +1,23 @@
+name = "LobUpdate"
+version = 1
+kind = "state_update"
+
+[[fields]]
+name = "t"
+physical = "i64"
+logical = "Timestamp"
+
+[[fields]]
+name = "px"
+physical = "i64"
+logical = { Fp = { scale = 8 } }
+
+[[fields]]
+name = "qty"
+physical = "i64"
+logical = { Fp = { scale = 8 } }
+
+[[fields]]
+name = "side"
+physical = "bool"
+logical = "Side"

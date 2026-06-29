@@ -1,0 +1,9 @@
+* codegen build script experiment
+A short test build script (~build.rs~) which generates Rust structs (~gen_schemas/~)
+specified by TOML files (~schemas/~).
+
+Worked well enough. However, it does obscure the type definitions from the rest of the
+codebase, bugs out my LSP sometimes, and requires one to import it into the codebase in an
+ugly way.
+
+Keeping here for future reference.

@@ -1,0 +1,22 @@
+name = "Trade"
+version = 1
+kind = "event"
+
+[[fields]]
+name = "t"
+physical = "i64"
+logical = "Timestamp"
+
+[[fields]]
+name = "px"
+physical = "i64"
+logical = { Fp = { scale = 8 } }
+
+[[fields]]
+name = "qty"
+physical = "i64"
+
+[[fields]]
+name = "aggr"
+physical = "bool"
+logical = "Side"
